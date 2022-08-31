@@ -51,6 +51,12 @@
 .header__nav:hover{
     transform: translate(12px,12px);
 }
+
+.header__nav a:hover{
+    color: #f11444;
+    text-decoration: underline;
+}
+
 .header__nav a{
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
@@ -59,12 +65,6 @@
     padding: 0px 5px;
     text-transform: uppercase;
 }
-
-.header__nav a:hover{
-    color: #f11444;
-    text-decoration: underline;
-}
-
 /*2° PARTE*/
 .logo__container{
     grid-area: logo;
@@ -528,6 +528,12 @@ img.btn-whatsapp:hover{
         font-size: 25px;
         border: solid 2px gold;
         padding: 5px;
+        transition: all 1s ease;
+    }
+
+    .titulo:hover{
+        transform: rotate(160deg);
+        background: #6a5b0761;
     }
 
     .cubo{
@@ -537,6 +543,28 @@ img.btn-whatsapp:hover{
         padding: 14px;
         margin: 0px 14px;
         background: #ffd70017
+    }
+
+    @keyframes aumentando {
+        0%{
+            transform: scale(0);
+        }
+
+        50%{
+            transform: scale(1);
+        }
+
+        100%{
+            transform: scale(1.5);
+        }
+
+    }
+
+    .cubo:hover{
+        animation-name: aumentando;
+        animation-timing-function:ease-in;
+        animation-duration: 3s;
+        animation-delay: 0.9s;
     }
 
     .container__servicio{
