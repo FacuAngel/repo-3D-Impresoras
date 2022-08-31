@@ -16,13 +16,13 @@
 /*1° PARTE*/
 .header__container{
     grid-area: header;
-    background-color:#d0f2e7d2;
     display: flex;
     justify-content: space-between;
     position: fixed;
     z-index: 9999;
     width: 100%;
     height: 135px;
+    background-image: linear-gradient(to bottom,#d0f2e7d2,#5bed74 );
 }
 
 .header__imagen{
@@ -34,6 +34,11 @@
     box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36);
 }
 
+.header__imagen:hover{
+    transform: translate(12px,4px);
+    transform: rotate(20deg);
+}
+
 .header__nav{
     display: flex;
     flex-direction: row;
@@ -43,13 +48,22 @@
     position: relative;
 }
 
+.header__nav:hover{
+    transform: translate(12px,12px);
+}
 .header__nav a{
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-size: 25px;
     color: #0a996cfa;
     padding: 0px 5px;
+    text-transform: uppercase;
 }
+.header__nav a:hover{
+    color: #f11444;
+    text-decoration: underline;
+}
+
 /*2° PARTE*/
 .logo__container{
     grid-area: logo;
@@ -68,6 +82,7 @@
     font-family: 'Work Sans', sans-serif;
     color: #cedb08e3;
     font-size: 160px;
+    text-transform: uppercase;
 }
 
 .logo__video{
@@ -139,6 +154,12 @@
 .redesSociales{
     width: 30px;
     height: 30px;
+    margin: 5px;
+    transition: 5s;
+}
+
+.redesSociales:hover{
+    transform: scale(2);
 }
 
 img.btn-whatsapp {
@@ -158,7 +179,8 @@ img.btn-whatsapp:hover{
     -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
     -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
     box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
-    transition-duration: 1s;
+    transition-duration: 5s;
+    transform: scale(2);
 }
     
 .footer__responsable{
@@ -218,6 +240,15 @@ img.btn-whatsapp:hover{
     font-family: 'Ubuntu', sans-serif;
     font-size: 12px;
     padding-bottom: 7px;
+}
+
+.campo__llenado{
+    width: 200px;
+    transition: 2s;
+}
+
+.campo__llenado:focus{
+    width: 300px;
 }
 
 .contacto__menu{
@@ -477,11 +508,11 @@ img.btn-whatsapp:hover{
 
     .container__tresParte{
         grid-area: descripcion;
-        background-color:#d0f2e7d2;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        background-image: linear-gradient(to left, #d0f2e7d2, #64f3c5eb);
     }
 
     .titulo{
@@ -530,6 +561,10 @@ img.btn-whatsapp:hover{
         border: double 2px black;
         padding: 30px;
     }
+
+    /* .opciones__servicio.animate__animated.animate__bounce {
+        --animate-duration: 20s;
+    } */
 
     .opciones__servicio a{
         text-decoration: none;
