@@ -134,6 +134,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to top, black,#64590bfa);
 }
 
 .footer__redes{
@@ -324,11 +325,17 @@ img.btn-whatsapp:hover{
     background: black;
     margin: 15px 15px;
     border: solid 2px blue;
+    transition: 3s;
 }
 
 .img__productos{
     width: 55%;
     margin: 7px 0px;
+}
+
+.producto__imagen:hover{
+    transform: translate(20px,20px);
+    transform: scale(1.5);
 }
 
 .caja__caracteristicas1{
