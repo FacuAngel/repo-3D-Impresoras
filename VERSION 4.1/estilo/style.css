@@ -50,6 +50,11 @@
     color: #0a996cfa;
     padding: 0px 5px;
 }
+
+.header__nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
 /*2° PARTE*/
 .logo__container{
     grid-area: logo;
