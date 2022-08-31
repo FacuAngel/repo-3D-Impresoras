@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*PAGINA PRINCIPAL*/
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "logo"
+    "datos"
+    "footer"   
+    ;
+    grid-template-rows: 135px 100vh 350px 110px;
+}
+/*1° PARTE*/
+.header__container{
+    grid-area: header;
+    background-color:#d0f2e7d2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 135px;
+}
+
+.header__imagen{
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px 10px 15px;
+    padding: 5px 5px;
+    -webkit-box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36); 
+    box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36);
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-top: 55px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.header__nav a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    color: #0a996cfa;
+    padding: 0px 5px;
+}
+/*2° PARTE*/
+.logo__container{
+    grid-area: logo;
+    background-image: url("https://www.adslzone.net/app/uploads-adslzone.net/2020/05/aper3D.jpg");
+    /* background-size:cover; cubre toda la caja*/
+    background-size: 1300px 657px; /*primero eje X, eje Y*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo__titulo{
+    text-align: center;
+    margin: 10px 50px 0px 50px;
+    padding-bottom: 25px;
+    font-family: 'Work Sans', sans-serif;
+    color: #cedb08e3;
+    font-size: 160px;
+}
+
+.logo__video{
+    width: 31%;
+    height: 28%;
+    border: double 10px #0e395ab8;
+    border-radius: 10px;
+}
+/*3° PARTE*/
+.datos__container{
+    grid-area: datos;
+    background-color:#d0f2e7d2;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+}
+
+.datos__oficina{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 426px;
+}
+
+.datos__tituloP{
+    margin-bottom: 7px;
+}
+
+.datos__tituloS{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.datos__ubicacion{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: 479px;
+}
+
+#barra__ubicacion{
+    width: 69%;
+    margin-left: 44px;
+    margin-top: 10px;
+}
+
+.datos__mapa{
+    width: 106%;
+    height: 59%;
+    margin-top: 10px;
+}
+/*4° PARTE*/
+.footer__container{
+    grid-area: footer;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__redes{
+    display: flex;
+    flex-direction: row;
+}
+
+.redesSociales{
+    width: 30px;
+    height: 30px;
+}
+
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius:100px !important;
+    width: 30px;
+    height: 30px;
+    bottom: 46px;
+}
+img.btn-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transition-duration: 1s;
+}
+    
+.footer__responsable{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+}
+/*PAGINA CONTACTO*/
+.container__contacto{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "logo"
+    "formulario"
+    "footer" 
+    ;
+    grid-template-rows: 134px 77vh 559px 110px;
+} 
+/*2 PARTE*/
+.logo__containerContacto{
+    grid-area: logo;
+    background-image: url("https://www.adslzone.net/app/uploads-adslzone.net/2020/05/aper3D.jpg");
+    background-size: 389px 294px; /*primero eje X, eje Y*/
+}
+
+.contactoTitulo{
+    font-size: 150px;
+    margin-top: 60px;
+}
+/*3° PARTE*/
+.contacto__container{
+    grid-area: formulario;
+    background-color:#d0f2e7d2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulario__contacto{
+    display: grid;
+    align-content: space-around;
+    padding: 25px 50px;
+    margin: 20px 0px;
+    border: solid 3px yellowgreen;
+    border-radius: 10px;
+}
+
+.ingreso__datos{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #3f3f3f;
+    margin-bottom: 25px;
+}
+
+.campos{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+
+.contacto__menu{
+    display: grid;
+    justify-items: center;
+}
+
+.seleccion__datos{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #3f3f3f;
+}
+
+.horario{
+    margin-bottom: 15px;
+}
+
+.ubicacion{
+    margin: 15px 0px 10px 0px;
+}
+
+.novedades{
+    margin: 15px 0px;
+}
+
+.seleccion{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.boton{
+    text-align: center;
+    padding: 0px 10px;
+    margin-bottom: 3px;
+    margin-left: 145px;
+}
+/*PAGINA DE EQUIPOS*/
+.equipos__container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "productos"
+    "contactoProducto"
+    "footer" 
+    ;
+    grid-template-rows: 135px 96vh 380px 110px;
+}
+/*2° PARTE*/
+.productos__container{
+    grid-area: productos;
+    background-color:#a0f3d8d2;
+}
+
+#titulo__equipo{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    color: #cedb08e3;
+    font-size: 60px;
+    margin: 30px 0px;
+}
+.equipos__card{
+    display: flex;
+    margin: 0px 6px;
+    width: 99%;
+    height: 65%;
+}
+.card{
+    text-align: center;
+    border: solid 2px black;
+    margin: 0px 4px;
+}
+
+.nombre__equipo1{
+    margin: 12px 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+.nombre__equipo2{
+    margin-top: 12px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+.nombre__equipo3{
+    margin-top: 12px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+.nombre__equipo4{
+    margin-top: 12px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 19px;
+}
+
+.producto__imagen{
+    background: black;
+    margin: 15px 15px;
+    border: solid 2px blue;
+}
+
+.img__productos{
+    width: 55%;
+    margin: 7px 0px;
+}
+
+.caja__caracteristicas1{
+    margin-bottom: 81px;
+}
+
+.caja__caracteristicas2{
+    margin-bottom: 49px;
+}
+
+.caja__caracteristicas3{
+    margin-bottom: 73px;
+}
+
+.caja__caracteristicas4{
+    margin-bottom: 53px;
+}
+
+.caracteristicas{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+}
+
+.link__mercado{
+    text-decoration: none;
+    border: solid 1px black;
+    color: #000000fa;
+    background: #7c737352;
+    padding: 3px;
+    border-radius: 5px;
+}
+/*3° PARTE*/
+.contacto__containerEquipo{
+    grid-area: contactoProducto;
+    background-color:#d0f2e7d2;
+}
+
+.formulario__contactoEquipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 10px 0px 10px;
+    border: solid 2px #7fe96b73;
+    border-radius: 10px;
+}
+
+.boton__equipo{
+    margin-bottom: 7px;
+    margin-top: 8px;
+}
+
+.boton__equipoEnviar{
+    margin-right: 23px;
+}
+/*CELULAR*/
+@media (min-width: 390px){
+    .container{
+        grid-template-rows: 100px 524px 470px 100px;
+    }
+
+    .header__container {
+        height: 100px;
+    }
+
+    .header__imagen {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header__nav {
+        padding-top: 32px;
+        margin-right: 10px;
+    }
+
+    .header__nav a {
+        font-size: 11px
+    }
+
+    .logo__container {
+        background-size: 389px 294px;
+    }
+
+    .logo__titulo {
+        margin: 50px 0px 100px 0px;
+        font-size: 47px
+    }
+
+    .logo__video {
+        width: 66%;
+        height: 39%;
+    }
+
+    .datos__oficina {
+        font-size: 16px;
+        margin: 30px 18px;
+    }
+
+    .datos__ubicacion {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+
+    .datos__mapa {
+        height: 91%;
+        margin-top: 17px
+    }
+
+    .container__contacto{
+        grid-template-rows: 100px 277px 934px 100px;
+    }
+
+    .contacto__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .equipos__container{
+        grid-template-rows: 100px 1867px 375px 100px;
+    ;
+    }
+
+    .equipos__card{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card{
+        margin: 7px 16px;
+        padding: 10px;
+    }
+
+    .quienesSomos__container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "logo"
+        "descripcion"
+        "footer" 
+        ;
+        grid-template-rows: 100px 277px 520px 100px;
+    }
+
+    .logo__containerQuienesSomos{
+        grid-area: logo;
+        background-image: url("https://www.adslzone.net/app/uploads-adslzone.net/2020/05/aper3D.jpg");
+        background-size: 389px 294px;
+    }
+
+    .container__tresParte{
+        grid-area: descripcion;
+        background-color:#d0f2e7d2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .titulo{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        border: solid 2px gold;
+        padding: 5px;
+    }
+
+    .cubo{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 15px;
+        border: double 2px #6a5b0761;
+        padding: 14px;
+        margin: 0px 14px;
+        background: #ffd70017
+    }
+
+    .container__servicio{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "servicios"
+        "contactoProducto"
+        "footer" 
+        ;
+        grid-template-rows: 100px 615px 375px 100px;
+    }
+
+    .servicios{
+        grid-area: servicios;
+        background-color:#d0f2e7d2;
+    }
+
+    .titulo__servicio{
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        color: #cedb08e3;
+        font-size: 25px;
+        margin: 30px 0px;
+    }
+
+    .opciones__servicio{
+        text-align: center;
+        margin: 50px;
+        border: double 2px black;
+        padding: 30px;
+    }
+
+    .opciones__servicio a{
+        text-decoration: none;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 17px;
+        color: black;
+    }
+}
+/*IPAD AIR*/
+@media (min-width: 820px){
+
+    .container {
+        grid-template-rows: 135px 81vh 489px 110px;
+    }
+
+    .header__container {
+        height: 135px;
+    }
+
+    .header__imagen {
+        width: 95px;
+        height: 95px
+    }
+
+    .header__nav {
+        padding-top: 44px;
+        margin-right: 20px;
+    }
+
+    .header__nav a {
+        font-size: 25px;
+    }
+
+    .logo__container {
+        background-size: 829px 1026px
+    }
+
+    .logo__titulo{
+        font-size: 106px;
+    }
+
+    .logo__video {
+        width: 72%;
+        height: 49%;
+    }
+
+    .datos__oficina {
+        font-size: 22px;
+        margin-left: 145px;
+    }
+
+    .datos__ubicacion {
+        font-size: 23px;
+        margin-left: 251px;
+    }
+
+    .container__contacto {
+        grid-template-rows: 134px 36vh 975px 110px;
+    }
+
+    .logo__containerContacto {
+        background-size: 820px 536px;
+    }
+
+    .ingreso__datos {
+        font-size: 22px;
+    }
+
+    .campos {
+        font-size: 18px;
+    }
+
+    .seleccion__datos {
+        font-size: 18px;
+    }
+
+    .seleccion {
+        font-size: 18px;
+    }
+
+    .boton {
+        padding: 5px 24px;
+        margin-bottom: 29px;
+    }
+
+    .equipos__container {
+        grid-template-rows: 135px 247vh 454px 110px;
+    }
+
+    .equipos__card {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 6px 15px;
+        padding: 15px;
+    }
+
+    .nombre__equipo1 {
+        font-size: 25px;
+    }
+
+    .producto__imagen {
+        margin: 18px 27px;
+    }
+
+    .img__productos {
+        width: 50%;
+    }
+
+    .caracteristicas {
+        font-size: 22px;
+    }
+
+    .boton__limpiarFormulario{
+        padding: 10px;
+    }
+
+    .boton__equipoEnviar {
+        padding: 10px;
+    }
+
+    .quienesSomos__container{
+        grid-template-rows: 134px 36vh 700px 110px;
+    }
+
+    .logo__containerQuienesSomos{
+        background-size: 820px 536px;
+    }
+
+    .titulo {
+        font-size: 35px;
+        padding: 11px;
+    }
+
+    .cubo {
+        font-size: 23px;
+    }
+
+    .container__servicio{
+        grid-template-rows: 134px 69vh 454px 110px;
+    }
+
+    .titulo__servicio {
+        font-size: 35px;
+        margin: 45px 0px;
+    }
+
+    .opciones__servicio {
+        margin: 60px;
+        padding: 40px;
+    }
+
+    .opciones__servicio a {
+        font-size: 27px;
+    }
+}
+/*COMUN*/
+@media (min-width: 1200px){
+    .container {
+        grid-template-rows: 135px 110vh 489px 110px;
+    }
+
+    .logo__container {
+        background-size: 1301px 732px;
+    }
+
+    .logo__titulo{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: 155px;
+    }
+
+    .logo__video {
+        width: 49%;
+        height: 34%;
+    }
+
+    .datos__oficina {
+        font-size: 25px;
+        margin-left: 53vh;
+    }
+
+    .datos__ubicacion {
+        font-size: 25px;
+        margin-left: 71vh;
+    }
+
+    .datos__mapa {
+        margin-top: 5px;
+    }
+
+    .equipos__container {
+        grid-template-rows: 135px 110vh 456px 110px;
+    }
+
+    .container__contacto {
+        grid-template-rows: 134px 76vh 685px 110px;
+    }
+
+    .logo__containerContacto {
+        background-size: 1300px 536px;
+    }
+
+    .contacto__container {
+        flex-direction: row
+    }
+
+    .equipos__card{
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .caja__caracteristicas1 {
+        margin-bottom: 93px;
+    }
+
+    .caja__caracteristicas2 {
+        margin-bottom: 72px;
+    }
+
+    .caja__caracteristicas3 {
+        margin-bottom: 70px;
+    }
+
+    .quienesSomos__container{
+        grid-template-rows: 134px 76vh 685px 110px;
+    }
+
+    .logo__containerQuienesSomos{
+        background-size: 1300px 536px;
+    }
+
+    .container__servicio {
+        grid-template-rows: 134px 150vh 454px 110px;
+    }
+
+    .titulo__servicio {
+        font-size: 45px;
+        margin: 55px 0px;
+    }
+
+    .opciones__servicio {
+        margin: 70px 413px;
+        padding: 50px;
+    }
+
+    .opciones__servicio a {
+        font-size: 37px;
+    }
+}
