@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="../estilo/style.css">
+            <title>Contacto</title>
+        </head>
+        <body>
+            <div class="container__contacto">
+                <header class="header__container">                    
+                    <img class="header__imagen" src="../imagenes/250x120.png" alt="Logo de la empresa">
+                    <ul class="header__nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./quienes_somos.html">Quienes somos</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./equipos.html">Equipos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>                   
+                </header>
+
+                <main class="logo__containerContacto">
+                    <h1 class="logo__titulo">3D IMPRESIONES</h1>
+                </main>
+                
+                <form class="contacto__container" action="" method="get" enctype="multipart/form-data">                    
+                    <fieldset class="formulario__contacto">
+                        <!-- creamos un marco para colocar los datos del contacto -->
+                        <h3 class="ingreso__datos">CONTACTO</h3>
+                        <!-- tenemos un campo donde rellenamos con el nombre e indicamos que es un campo obligatorio -->
+                        <label class="campos" for="nombre_apellido">Nombre <b>requerido</b></label>
+                        <input class="campo__llenado" type="text" name="nombre_apellido" id="nombre_apellido" required>
+                        <!-- realizamos un salto para que no este todo junto -->
+                        <br><br> 
+                        <!-- campo para colocar el mail e indicamos que es un campo obligatorio-->
+                        <label class="campos" for="mail">Email <b>requerido</b></label>
+                        <input class="campo__llenado" type="email" name="mail" id="mail" required>
+                        <br><br>
+                        <!-- campo para colocar el numero de telefono e indicamos que es un campo obligatorio para poder contactarnos con la persona-->
+                        <label class="campos" for="telefono">Telefono</label>
+                        <input class="campo__llenado" type="tel" name="telefono" id="telefono" required>
+                        <br><br>
+                        <label class="campos" for="mensaje">Mensaje <b>requerido</b></label>
+                        <br>
+                        <!-- area para que nos deje un comentario o consulta -->
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+                        <br>
+                        <!-- boton para limpiar los campos -->
+                        <input  class="boton1" type="reset" value="Limpiar formulario"> 
+                    </fieldset> 
+                    <div> 
+                        <!-- realizamos un menu desplegable para que elija en que horario lo podemos llamar -->                        
+                        <div class="contacto__menu">
+                            <h3 class="seleccion__datos horario">¿En que horario prefiere ser contactado?</h3>
+                            <select>
+                            <!-- esta opcion queda desabilitada para que se pueda ver al principio en el menu -->
+                                <option value="horarioContacto" selected disabled>Elija un horario</option>
+                            <!-- colocamos las opciones para poder elejir en el menu -->
+                                <option class="seleccion">Mañana</option>
+                                <option class="seleccion">Tarde</option>
+                                <option class="seleccion">Noche</option>
+                            </select>
+                            <!-- creamos una seleccion para elija la forma de contacto  -->
+                            <h3 class="seleccion__datos ubicacion">¿Desea que lo llamemos o mandemos un mensaje?</h3> 
+                            <p class="seleccion">Mensaje</p>
+                            <!-- creamos el boton "radio" para que elija entre 2 opciones -->
+                            <input type="radio" name="mensaje" value="Mensaje">
+                            <p class="seleccion">Llamada</p>
+                            <input type="radio" name="mensaje" value="Llamada">
+                            <h3 class="seleccion__datos novedades">¿Le gustaria recibir novedades sobre nuestros productos?</h3>
+                            <!-- creamos el checkbok para que se suscriba o no -->
+                            <input type="checkbox">
+                            <br><br>
+                        </div>
+                        <input class="boton" type="submit" value="Enviar formulario"> 
+                    </div>                   
+                </form> 
+
+                <footer class="footer__container"> <!-- grid-area -->
+                    <section class="footer__redes">
+                        <a href="http://www.facebook.com"><img class="redesSociales" src="../imagenes/icons8-facebook-nuevo-48.png" alt="Facebook"></a>
+                        <a href="http://www.linkedin.com"><img class="redesSociales" src="../imagenes/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                    </section>
+                    <img class="btn-whatsapp" src="../imagenes/icons8-whatsapp-48.png" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/5492616660807?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
+                    <p class="footer__responsable">Autor: Cervera Facundo-2022</p>         
+                </footer>
+
+            </div>
+        </body>
+    </html>
