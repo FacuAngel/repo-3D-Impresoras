@@ -59,19 +59,12 @@
     padding: 0px 5px;
     text-transform: uppercase;
 }
-<<<<<<< HEAD
+
 .header__nav a:hover{
     color: #f11444;
     text-decoration: underline;
 }
 
-=======
-
-.header__nav a:hover{
-    color: #c78c19;
-    text-decoration: underline;
-}
->>>>>>> Agregamos_animacion
 /*2° PARTE*/
 .logo__container{
     grid-area: logo;
