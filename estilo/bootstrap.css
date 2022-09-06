@@ -1,0 +1,56 @@
+.navegador_modificado{
+  background-color: aquamarine;
+  /* position: fixed;
+  z-index: 9999; */
+}
+
+.imagen_logo{
+  -webkit-box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36); 
+  box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36)
+}
+
+.imagen_logo:hover{
+  transform: translate(12px,4px);
+  transform: rotate(20deg);
+}
+
+/* .navegador_modificado1{
+  position: relative;
+} */
+
+.texto_navegador{
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+}
+
+.texto_navegador:hover{
+  color: #ddee47e7;
+  text-decoration: underline;
+}
+
+.texto_navegador:hover{
+  transform: translate(12px,12px);
+}
+
+.logo__container{
+  background-image: url("https://www.adslzone.net/app/uploads-adslzone.net/2020/05/aper3D.jpg");
+  background-size: 1300px 713px;
+}
+
+.logo__titulo{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  color: #cedb08e3;
+  font-size: 160px;
+}
+
+.logo__video{
+  width: 29%;
+  height: 95%;
+  border: double 10px #0e395ab8;
+  border-radius: 10px;
+  margin-left: 460px;
+  padding: 5px;
+}
+

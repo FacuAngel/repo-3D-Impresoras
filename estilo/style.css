@@ -1,9 +1,9 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 /*PAGINA PRINCIPAL*/
-.container{
+.container_navegador{
     display: grid;
     grid-template-areas: 
     "header"
@@ -25,9 +25,13 @@
     background-image: linear-gradient(to bottom,#d0f2e7d2,#5bed74 );
 }
 
+.color_fondo{
+    background-color: #d0f2e7d2;
+}
+
 .header__imagen{
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     margin: 10px 0px 10px 15px;
     padding: 5px 5px;
     -webkit-box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36); 
@@ -40,11 +44,11 @@
 }
 
 .header__nav{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    list-style-type: none;
-    padding-top: 55px;
-    margin-right: 20px;
+    list-style-type: none; */
+    /* padding-top: 55px;
+    margin-right: 20px; */
     position: relative;
 }
 
@@ -419,7 +423,7 @@ img.btn-whatsapp:hover{
 }
 /*CELULAR*/
 @media (min-width: 390px){
-    .container{
+    .container_navegador{
         grid-template-rows: 100px 524px 470px 100px;
     }
 
@@ -612,7 +616,7 @@ img.btn-whatsapp:hover{
 /*IPAD AIR*/
 @media (min-width: 820px){
 
-    .container {
+    .container_navegador {
         grid-template-rows: 135px 81vh 489px 110px;
     }
 
@@ -760,7 +764,7 @@ img.btn-whatsapp:hover{
 }
 /*COMUN*/
 @media (min-width: 1200px){
-    .container {
+    .container_navegador {
         grid-template-rows: 135px 110vh 489px 110px;
     }
 
