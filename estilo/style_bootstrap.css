@@ -1,0 +1,249 @@
+.navegador_modificado{
+    background-image: linear-gradient(to top, aquamarine,#eff3f1);
+}
+  
+.imagen_logo{
+    -webkit-box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36); 
+    box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36)
+}
+  
+.imagen_logo:hover{
+    transform: translate(12px,4px);
+}
+  
+.texto_navegador{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+  
+.texto_navegador:hover{
+    color: #ddee47e7;
+    text-decoration: underline;
+    transform: translate(3px,3px);
+}
+
+.logo__container{
+    height: 100vh; /*que tome el ancho de la pantalla no importa que tipo sea*/
+    background-attachment: fixed;
+    background-position: center; /*la imagen se quede centrada*/
+    background-size: cover; /*tome valor original de la imagen*/
+    background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg");
+  
+}
+.logo__container h1{
+    position: absolute;
+    left: 18%;
+    top: 37%;
+    font-family: 'Work Sans', sans-serif;
+    color: #e8ed1b;
+    font-size: 8vw;
+}
+.logo__container iframe{
+    position: absolute;
+    top: 57%;
+    right: 0%;
+    border: 2px double #0404ab6e;
+    padding: 8px;
+}
+
+.datos__container{
+    background-image: linear-gradient(to top, aquamarine,#eff3f1);
+}
+
+.datos__container{
+  text-align: center;
+  margin-top: 16px;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.datos__titulo h2{
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  color: #78682dc7;
+}
+
+.datos__titulo hr{
+  border-top: 2px solid black;
+  opacity: .2;
+}
+
+.datos__titulo h3{
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  color: #78682dc7;
+} 
+
+.datos__mapa{
+  border: 1px solid #0404ab6e;
+  padding: 5px;
+}
+
+.contacto__container{
+    background-image: linear-gradient(to top, aquamarine,#eff3f1);
+}
+  
+.ingreso__datos h2{
+    font-family: 'Ubuntu', sans-serif;
+    color: #1a1912c2;
+    margin-bottom: 20px;
+}
+  
+.campos{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding-bottom: 7px;
+    color: #8d8662fa;
+    margin-top: 8px;
+}
+  
+.boton1{
+    margin: 15px;
+}
+  
+.seleccion__datos{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #3f3f3f;
+    margin: 20px 0px;
+}
+
+.logo1__container{
+    height: 57vh; /*que tome el alto de la pantalla no importa que tipo sea*/
+    background-attachment: fixed;
+    background-position: center; /*la imagen se quede centrada*/
+    background-size: cover; /*tome valor original de la imagen*/
+    background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg");
+}
+  
+.logo1__container h1{
+    position: absolute;
+    left: 18%;
+    top: 37%;
+    font-family: 'Work Sans', sans-serif;
+    color: #e8ed1b;
+    font-size: 8vw;
+}
+  
+.descripcion__container{
+    background-image: linear-gradient(to top, aquamarine,#eff3f1);
+    padding-bottom: 5px;
+}
+  
+.descripcion__cubo{
+    margin-bottom: 50px;
+}
+  
+.descripcion__titulo{
+    font-family: 'Kanit', sans-serif;
+    padding-top: 25px;
+}
+  
+.descripcion{
+    font-family: 'Kanit', sans-serif;
+}
+/*creo la clase para ejecutar la la animacion*/
+.animacion{
+    opacity: 0;
+    animation: animacion__descripcion 2s;
+    -webkit-animation: animacion__descripcion 2s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes animacion__descripcion{
+    /*que empiece con*/
+    from{
+      opacity: 0;
+      top: -150px;
+    }
+    /*y termine*/
+    to{
+      opacity: 1;
+      top: 0;
+    }
+}
+/*para que sea real en todo los navegadores*/
+@-webkit-keyframes animacion__descripcion{
+    from{
+      opacity: 0;
+      top: -150px;
+    }
+    to{
+      opacity: 1;
+      top: 0;
+    }
+}
+
+.equipo__container{
+    background-image: linear-gradient(to top, aquamarine,#eff3f1);
+}
+
+.logo2__container{
+    height: 57vh; /*que tome el alto de la pantalla no importa que tipo sea*/
+    background-attachment: fixed;
+    background-position: center; /*la imagen se quede centrada*/
+    background-size: cover; /*tome valor original de la imagen*/
+    background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg");
+}
+  
+.logo2__container h1{
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    font-family: 'Work Sans', sans-serif;
+    color: #e8ed1b;
+    font-size: 6vw;
+}
+
+.texto{
+    background-color: aliceblue;
+}
+
+.texto h4{
+    font-family: 'Kanit', sans-serif;
+}
+
+.texto a{
+text-decoration: none;
+}
+
+.titulo__servicio h1{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    font-family: 'Work Sans', sans-serif;
+    color: #e8ed1b;
+    font-size: 7vw;
+}
+  
+.servicio__container{
+    background-image: linear-gradient(to top, aquamarine,#eff3f1);
+}
+
+.footer__container{
+  background-image: linear-gradient(to top, #1a1a1afc,#e7d86ccc);
+  height: 25vh;
+}
+
+.datos__footer{
+  padding: 45px 30px 0px 30px;
+}
+
+.redesSociales{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  transition: 5s;
+  align-content: center;
+}
+
+.redesSociales:hover{
+  transform: scale(2);
+}
+
+.footer__responsable{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #f7f5f599;
+}

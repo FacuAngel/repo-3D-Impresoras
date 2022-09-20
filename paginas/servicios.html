@@ -4,67 +4,185 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-            <link rel="stylesheet" href="../estilo/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="../estilo/style_bootstrap.css">
             <title>Servicios</title>
         </head>
         <body>
-            <div class="container__servicio">
-                <header class="header__container">
-                    <img class="header__imagen" src="../imagenes/250x120.png" alt="Logo de la empresa">
-                    <ul class="header__nav">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./quienes_somos.html">Quienes somos</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./equipos.html">Equipos</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>  
-                </header>
 
-                <section class="servicios">
-                    <h2 class="titulo__servicio">NUESTROS SERVICIOS</h2>
-                    <div class="opciones__servicio animate__animated animate__swing">
-                        <a href="">IMPRESIONES 3D</a>
+            <header>
+                <nav class="navbar navbar-expand-sm fixed-top navegador_modificado">
+                    <div class="container-fluid container-sm">
+                        <img src="../imagenes/aper3D.png" class="img-thumbnail navbar-brand imagen_logo" alt="Logo" width="250" height="150">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link texto_navegador" href="../index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link texto_navegador" href="./quienes_somos.html">QUIENES SOMOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link texto_navegador" href="./servicios.html">SERVICIOS</a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link texto_navegador" href="./equipos.html">EQUIPOS</a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link texto_navegador" href="./contacto.html">CONTACTOS</a>
+                                </li>  
+                            </ul>
+                        </div>
                     </div>
-                    <div class="opciones__servicio animate__animated animate__swing">
-                         <a href="">DISEÑO GRAFICO</a>   
-                    </div>
-                    <div class="opciones__servicio animate__animated animate__swing">
-                        <a href="">INGENIERIA</a>
-                    </div>
-                    <div class="opciones__servicio animate__animated animate__swing">
-                        <a href="">RENDERIZADO</a>
-                    </div>
-                </section>
+                </nav>
+            </header>
 
-                <section class="contacto__containerEquipo">
-                    <form action="" method="get" enctype="multipart/form-data">
-                        <fieldset class="formulario__contactoEquipo">
-                            <h3 class="ingreso__datos">CONTACTO POR SERVICIOS</h3>
-                            <label class="campos" for="nombre_apellido">Nombre</label>
-                            <input class="campo__llenado" type="text" name="nombre_apellido" id="">
-                            <br>                               
-                            <label class="campos" for="mail">Email</label>
-                            <input class="campo__llenado" type="email" name="mail"> 
-                            <br>                               
-                            <label class="campos" for="mensaje">Mensaje</label>                               
-                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>                    
-                            <div class="boton__equipo">                        
-                                <input class="boton__equipoEnviar" type="submit" value="Enviar">
-                                <input class="boton__limpiarFormulario" type="reset" value="Limpiar Formulario">
-                            </div> 
-                        </fieldset>
+            <section class="logo1__container">
+                <div class="container">
+                    <div class="titulo__servicio">
+                        <h1>NUESTROS SERVICIOS</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="servicio__container">
+                <div class="container-fluid">                     
+                    <div id="accordion">
+                        <div class="card item bg-secondary">
+                            <div class="card-header text-center">
+                                <a class="btn btn-info" data-bs-toggle="collapse" href="#impresion3d">IMPRESIONES 3D</a>
+                            </div>
+                            <div id="impresion3d" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <h6 class="text-center">DISEÑAMOS</h6>
+                                    <p class="text-center">Diseñar lo que necesitas imprimir, o bien, envIanos tu archivo en .IGS o .STL para que nosotros lo preparemos para la impresión.</p>
+                                    <br>
+                                    <h6 class="text-center">IMPRIMIMOS</h6>
+                                    <p class="text-center">Seleccionamos material, color, definición, relleno y cantidad para dar comienzo a la materialización de tus ideas.</p>
+                                    <br>
+                                    <h6 class="text-center">DESPACHAMOS</h6>
+                                    <p class="text-center">Realizamos envíos a todo el país.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card item bg-secondary">
+                                <div class="card-header text-center">
+                                <a class="btn btn-info" data-bs-toggle="collapse" href="#diseñoGrafico">DISEÑO GRAFICO</a>
+                                </div>
+                                <div id="diseñoGrafico" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <h6 class="text-center">CREATIVIDAD</h6>
+                                    <p class="text-center">Contamos con un grupo de diseñadores calificados que escucharán su necesidad para expresar y comunicarla de manera visual y creativa. Logre sus objetivos junto a nosotros. </p>
+                                    <br>
+                                    <h6 class="text-center">IDENTIDAD CORPORATIVA</h6>
+                                    <p class="text-center">Diferenciarse de la competencia es fundamental para liderar en el mercado. Generamos su manual de marca, donde definimos sus tipografías, colores, logos, logotipos y nombres. Todo lo necesario para ser competitivo y profesional. </p>
+                                    <br>
+                                    <h6 class="text-center">DISEÑO EDITORIAL Y PUBLICITARIO</h6>
+                                    <p class="text-center">Creamos, maquetamos y diseñamos tarjetearía, catálogos, banners, flyers y demás. Todo lo que necesites para impulsar tu negocio.</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card item bg-secondary">
+                                <div class="card-header text-center">
+                                <a class="btn btn-info" data-bs-toggle="collapse" href="#ingenieria">INGENIERIA</a>
+                                </div>
+                                <div id="ingenieria" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <h6 class="text-center">RELEVAMIENTO</h6>
+                                    <p class="text-center">Proporcionamos información exacta de un cuerpo tridimensional para poder trabajar con una información
+                                    precisa y completa de él, y así ayudar en la etapa de diseño y posibilitar su futura construcción. </p>
+                                    <br>
+                                    <h6 class="text-center">CÁLCULO DE ESTRUCTURAS</h6>
+                                    <p class="text-center">Contamos con expertos y herramientas para generar cálculos. El objetivo del análisis es determinar si el elemento o conjunto de elementos, se comporta como es deseado bajo las condiciones para lo cual se lo solicita. </p>
+                                    <br>
+                                    <h6 class="text-center">ANÁLISIS POR ELEMENTO FINITO</h6>
+                                    <p class="text-center">El análisis de elementos finitos muestra de manera gráfica si un producto se romperá, desgastará o funcionará como se espera cuando se lo somete a determinados esfuerzos físicos.</p>
+                                    </div>
+                                    <h6 class="text-center">DISEÑO CAD CAM</h6>
+                                    <p class="text-center">Utilizado principalmente para la creación de modelos 3D y vectores 2D. Empleado en el procesos de ingeniería desde el diseño conceptual y hasta el lay-out de productos, a través de fuerza y análisis dinámico de ensambles hasta la definición de métodos de manufactura.
+                                    Permite analizar interactiva y automáticamente las variantes de diseño.</p>
+                                </div>
+                        </div>
+                        <div class="card item bg-secondary">
+                                <div class="card-header text-center">
+                                <a class="btn btn-info" data-bs-toggle="collapse" href="#renderizado">RENDERIZADO</a>
+                                </div>
+                                <div id="renderizado" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <h6 class="text-center">OBJETOS</h6>
+                                    <p class="text-center">Visualice los objetos de la manera mas realista y genere un gran impacto al apreciar sus materiales y texturas.</p>
+                                    <br>
+                                    <h6 class="text-center">ARQUITECTURA</h6>
+                                    <p class="text-center">Arquitectura exterior o interior. Esta herramienta visual permite ver los espacios a través de imágenes fotorrealistas y apreciar todo sus detalles.</p>
+                                    <br>
+                                    <h6 class="text-center">PAISAJISMO</h6>
+                                    <p class="text-center">Paisajes y naturaleza. Las mejores representaciones fotorrealistas para tus proyectos. </p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+            <section class="contacto__container text-center">
+                <div class="container-fluid mt-3 ingreso__datos">
+                    <h2>CONTACTO POR SERVICIOS</h2>    
+                    <form>
+                        <div class="was-validated mb-3 mt-3">
+                            <label for="uname" class="form-label campos">Nombre:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Ingrese su nombre" name="uname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Por favor complete este campo.</div>
+                        </div>
+                        <div class="was-validated mb-3">
+                            <label for="pwd" class="form-label campos">Email:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Ingrese su correo" name="pswd" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Por favor complete este campo.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="campos" for="telefono">TELEFONO</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group was-validated">
+                            <label class="campos" for="comment">COMENTARIO:</label>
+                            <textarea class="form-control" rows="5" placeholder="Escriba su mensaje" id="comment" name="text" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary boton1">ENVIAR FORMULARIO</button>
                     </form>
-                </section>
+                </div>
+            </section>
 
-                <footer class="footer__container"> <!-- grid-area -->
-                    <section class="footer__redes">
-                        <a href="http://www.facebook.com"><img class="redesSociales" src="../imagenes/icons8-facebook-nuevo-48.png" alt="Facebook"></a>
-                        <a href="http://www.linkedin.com"><img class="redesSociales" src="../imagenes/icons8-linkedin-48.png" alt="LinkedIn"></a>
-                    </section>
-                    <img class="btn-whatsapp" src="../imagenes/icons8-whatsapp-48.png" alt="Whatsapp" onclick="window.location.href='https://wa.me/5492616660807?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
-                    <p class="footer__responsable">Autor: Cervera Facundo-2022</p>         
-                </footer>
-            </div>
+            <section class="footer__container">
+                <div>
+                    <footer class=" d-flex flex-wrap justify-content-between align-items-center border-top datos__footer">   
+                        <div class="col-md-4 d-flex align-items-center">
+                            <span class="mb-3 mb-md-0 footer__responsable">&copy; Autor: Cervera Facundo-2022</span>
+                        </div>              
+                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                            <li class="ms-3">
+                                <a href="http://www.facebook.com"><img class="redesSociales" src="../imagenes/icons8-facebook-nuevo-48.png" alt="Facebook"></a>
+                            </li>
+                            <li class="ms-3">
+                                <a href="http://www.linkedin.com"><img class="redesSociales" src="../imagenes/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                            </li>
+                            <li class="ms-3">
+                                <img class="redesSociales" src="../imagenes/icons8-whatsapp-48.png" alt="Whatsapp" onclick="window.location.href='https://wa.me/5492616660807?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
+                            </li>
+                        </ul>                   
+                    </footer>
+                </div>
+            </section>
+          
         </body>
     </html>
