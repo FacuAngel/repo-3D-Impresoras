@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Rajdhani:wght@300&display=swap");
+.logo__container {
+  height: 111vh; /*que tome el ancho de la pantalla no importa que tipo sea*/
+  background-attachment: fixed;
+  background-position: center; /*la imagen se quede centrada*/
+  background-size: cover; /*tome valor original de la imagen*/
+  background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg");
+}
+
+.logo__container h1 {
+  margin-top: 228px;
+}
+
+.logo__container iframe {
+  position: absolute;
+  top: 57%;
+  right: 0%;
+  border: 2px double rgba(4, 4, 171, 0.431372549);
+  padding: 8px;
+}
+
+.video__container {
+  margin-bottom: 5px;
+}
+
+.datos__container {
+  text-align: center;
+  height: 103vh;
+  padding-top: 50px;
+}
+
+.datos__titulo h2 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  color: rgba(120, 104, 45, 0.7803921569);
+}
+
+.datos__titulo h2 {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: #ede7f6;
+}
+
+.datos__titulo hr {
+  border-top: 2px solid black;
+  opacity: 0.2;
+}
+
+.datos__titulo h3 {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: #ede7f6;
+}
+
+.datos__mapa {
+  border: 2px double rgba(4, 4, 171, 0.431372549);
+  padding: 6px;
+  margin-top: 45px;
+}/*# sourceMappingURL=index.css.map */

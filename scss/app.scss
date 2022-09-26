@@ -1,0 +1,19 @@
+//colores y tipo de letras en proyecto
+@import "./base/colors.scss";
+@import "./base/typo.scss";
+//lay out del navegador
+@import "./layout/navigation.scss";
+//lay out del footer
+@import "./layout/footer.scss";
+//pagina principal (index.html)
+@import "./paginas/index.scss";
+//pagina contacto (contacto.html)
+@import "./paginas/contacto.scss";
+//formulario contacto
+@import "./layout/forms.scss";
+//pagina quienes somos
+@import "./paginas/quienesSomos.scss";
+//pagina equipos
+@import "./paginas/equipos.scss";
+//pagina servicios
+@import "./paginas/servicios.scss";

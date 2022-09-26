@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Rajdhani:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Poppins:wght@200&family=Rajdhani:wght@300&display=swap");
+.navegador_modificado {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.imagen_logo {
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.36);
+}
+.imagen_logo:hover {
+  transform: translate(12px, 4px);
+}
+
+.transparante {
+  background-color: transparent !important;
+}
+
+.texto_navegador {
+  color: rgb(0, 0, 0);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+}
+.texto_navegador:hover {
+  color: rgba(221, 238, 71, 0.9058823529);
+  text-decoration: underline;
+  transform: translate(3px, 3px);
+}
+
+.footer__container {
+  background-image: linear-gradient(#B3C5D7, #C5D5EA, #D8E1E9);
+  height: 20vh;
+}
+
+.datos__footer {
+  padding: 45px 30px 0px 30px;
+}
+
+.footer__responsable {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+.redesSociales {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  transition: 5s;
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    padding: 0px 30px;
+  }
+}
+.logo__container {
+  height: 111vh; /*que tome el ancho de la pantalla no importa que tipo sea*/
+  background-attachment: fixed;
+  background-position: center; /*la imagen se quede centrada*/
+  background-size: cover; /*tome valor original de la imagen*/
+  background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg");
+}
+
+.logo__container h1 {
+  text-align: center;
+  margin-top: 228px;
+  font-family: "Cormorant Garamond", serif;
+  color: #f00;
+  font-size: 8vw;
+}
+
+.logo__container iframe {
+  position: absolute;
+  top: 57%;
+  right: 0%;
+  border: 2px double rgba(4, 4, 171, 0.431372549);
+  padding: 8px;
+}
+
+.video__container {
+  margin-bottom: 5px;
+}
+
+.datos__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC);
+  text-align: center;
+  height: 103vh;
+  padding-top: 50px;
+}
+
+.datos__titulo h2 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  color: rgba(120, 104, 45, 0.7803921569);
+}
+
+.datos__titulo h2 {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: #ede7f6;
+}
+
+.datos__titulo hr {
+  border-top: 2px solid black;
+  opacity: 0.2;
+}
+
+.datos__titulo h3 {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: #ede7f6;
+}
+
+.datos__mapa {
+  border: 2px double rgba(4, 4, 171, 0.431372549);
+  padding: 6px;
+  margin-top: 45px;
+}
+
+.logo1__container {
+  height: 57vh; /*que tome el alto de la pantalla no importa que tipo sea*/
+  background-attachment: fixed;
+  background-position: center; /*la imagen se quede centrada*/
+  background-size: cover; /*tome valor original de la imagen*/
+  background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg");
+}
+
+.logo1__container h1 {
+  position: absolute;
+  left: 18%;
+  top: 37%;
+  font-family: "Cormorant Garamond", serif;
+  color: #f00;
+  font-size: 8vw;
+}
+
+.contacto__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC);
+  padding: 0px 200px;
+}
+
+.ingreso__datos h2 {
+  font-family: "Rajdhani", sans-serif;
+  color: #061629;
+  margin-bottom: 20px;
+}
+
+.seleccion__datos {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  color: #3f3f3f;
+  margin: 20px 0px;
+}
+
+.campos {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  padding-bottom: 7px;
+  color: rgba(141, 134, 98, 0.9803921569);
+  margin-top: 8px;
+}
+
+.boton1 {
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+  .contacto__container {
+    padding: 0px 40px;
+  }
+}
+.descripcion__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC);
+  padding-bottom: 5px;
+}
+
+.descripcion__cubo {
+  margin-bottom: 50px;
+}
+
+.descripcion__titulo {
+  font-family: "Rajdhani", sans-serif;
+  padding-top: 25px;
+}
+
+.descripcion {
+  font-family: "Poppins", sans-serif;
+  padding: 13px;
+}
+
+/*creo la clase para ejecutar la la animacion*/
+.animacion {
+  opacity: 0;
+  animation: animacion__descripcion 5s;
+  -webkit-animation: animacion__descripcion 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes animacion__descripcion {
+  /*que empiece con*/
+  from {
+    opacity: 0;
+    top: -150px;
+  }
+  /*y termine*/
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+/*para que sea real en todo los navegadores*/
+@-webkit-keyframes animacion__descripcion {
+  from {
+    opacity: 0;
+    top: -150px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+.logo2__container {
+  height: 57vh; /*que tome el alto de la pantalla no importa que tipo sea*/
+  background-attachment: fixed;
+  background-position: center; /*la imagen se quede centrada*/
+  background-size: cover; /*tome valor original de la imagen*/
+  background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg");
+}
+
+.logo2__container h1 {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  font-family: "Cormorant Garamond", serif;
+  color: #f00;
+  font-size: 8vw;
+}
+
+.equipo__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC);
+}
+
+.texto {
+  background-color: aliceblue;
+}
+
+.texto h4 {
+  font-family: "Rajdhani", sans-serif;
+  color: black;
+}
+.texto a {
+  text-decoration: none;
+}/*# sourceMappingURL=app.css.map */

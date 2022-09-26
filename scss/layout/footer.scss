@@ -1,0 +1,32 @@
+.footer__container{
+    background-image: linear-gradient($colorSecundario);
+    height: 23vh;
+}
+.datos__footer{
+    padding: 45px 30px 0px 30px;
+}
+@mixin tipo_Footer($tipo-familia,$tamano-letra){
+    font-family: $tipo-familia;
+    font-size: $tamano-letra;
+}
+.footer__responsable{
+    @include tipo_Footer($footer_responsable, 15px)
+}
+.redesSociales{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    transition: 5s;
+    align-content: center;
+    &:hover{
+        transform: scale(2);
+    }
+}
+@media (min-width:319px){
+    .footer__container {
+        padding: 0px 30px;
+        ul{
+            padding-left: 33px;  
+        }
+    }
+}

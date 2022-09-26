@@ -1,0 +1,22 @@
+.campos {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  padding-bottom: 7px;
+  color: rgba(141, 134, 98, 0.9803921569);
+  margin-top: 8px;
+}
+
+.boton1 {
+  margin: 15px;
+}
+.boton1:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .contacto__container {
+    padding: 0px 40px;
+  }
+}/*# sourceMappingURL=forms.css.map */

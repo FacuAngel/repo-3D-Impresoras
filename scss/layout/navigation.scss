@@ -1,0 +1,23 @@
+.navegador_modificado{
+    background-color: rgba($color: white, $alpha: 0.7);
+}
+.imagen_logo{
+    -webkit-box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36); 
+    box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36);
+    &:hover{
+        transform: translate(12px,4px);
+    }
+}
+.transparante{
+    background-color: transparent !important;
+    }
+.texto_navegador{
+    color: rgb(0, 0, 0);
+    font-family: $footer_titulo;
+    font-size: 18px;
+    &:hover{
+        color: #ddee47e7;
+        text-decoration: underline;
+        transform: translate(3px,3px);
+    }
+}

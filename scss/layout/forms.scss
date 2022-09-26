@@ -1,0 +1,22 @@
+.campos{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding-bottom: 7px;
+    color: #8d8662fa;
+    margin-top: 8px;
+}
+.boton1{
+    margin: 15px;
+
+    &:hover{
+        background-color: white;
+        color: black;
+        transition: 1s;
+    }
+}
+@media (max-width:768px){
+    .contacto__container{
+        padding: 0px 40px;
+    }
+}
+

@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Rajdhani:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Poppins:wght@200&family=Rajdhani:wght@300&display=swap");
+.navegador_modificado {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.imagen_logo {
+  -webkit-box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.36);
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.36); }
+  .imagen_logo:hover {
+    transform: translate(12px, 4px); }
+
+.transparante {
+  background-color: transparent !important; }
+
+.texto_navegador {
+  color: black;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px; }
+  .texto_navegador:hover {
+    color: #ddee47e7;
+    text-decoration: underline;
+    transform: translate(3px, 3px); }
+
+.footer__container {
+  background-image: linear-gradient(#B3C5D7, #C5D5EA, #D8E1E9);
+  height: 23vh; }
+
+.datos__footer {
+  padding: 45px 30px 0px 30px; }
+
+.footer__responsable {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px; }
+
+.redesSociales {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  transition: 5s;
+  align-content: center; }
+  .redesSociales:hover {
+    transform: scale(2); }
+
+@media (min-width: 319px) {
+  .footer__container {
+    padding: 0px 30px; }
+    .footer__container ul {
+      padding-left: 33px; } }
+
+.logo__container {
+  height: 111vh;
+  /*que tome el ancho de la pantalla no importa que tipo sea*/
+  background-attachment: fixed;
+  background-position: center;
+  /*la imagen se quede centrada*/
+  background-size: cover;
+  /*tome valor original de la imagen*/
+  background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg"); }
+  .logo__container h1 {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    color: #f00; }
+  .logo__container iframe {
+    position: absolute;
+    top: 57%;
+    right: 0%;
+    border: 2px double #0404ab6e;
+    padding: 8px;
+    height: 340px; }
+
+.datos__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC);
+  text-align: center;
+  height: 103vh;
+  padding-top: 50px; }
+
+.datos__titulo h2 {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: #0c0c0c; }
+
+.datos__titulo hr {
+  border-top: 2px solid black;
+  opacity: .2; }
+
+.datos__titulo h3 {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: black; }
+
+.datos__mapa {
+  border: 2px double #0404ab6e;
+  padding: 6px; }
+
+@media (min-width: 319px) {
+  .logo__container h1 {
+    margin-top: 215px;
+    font-size: 37px; }
+  .logo__container iframe {
+    top: 48%; }
+  .datos__container {
+    height: 115vh; } }
+
+@media (min-width: 767px) {
+  .logo__container h1 {
+    font-size: 62px;
+    margin-top: 175px; } }
+
+@media (min-width: 1023px) {
+  .logo__container h1 {
+    font-size: 70px; } }
+
+.logo1__container {
+  height: 57vh;
+  /*que tome el alto de la pantalla no importa que tipo sea*/
+  background-attachment: fixed;
+  background-position: center;
+  /*la imagen se quede centrada*/
+  background-size: cover;
+  /*tome valor original de la imagen*/
+  background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg"); }
+  .logo1__container h1 {
+    position: absolute;
+    top: 37%;
+    font-family: "Cormorant Garamond", serif;
+    color: #f00; }
+
+.contacto__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC);
+  padding: 0px 200px; }
+
+.ingreso__datos h2 {
+  font-family: "Rajdhani", sans-serif;
+  color: #061629;
+  margin-bottom: 20px;
+  padding-top: 20px; }
+
+.seleccion__datos {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  color: #3f3f3f;
+  margin: 20px 0px; }
+
+@media (min-width: 319px) {
+  .logo1__container h1 {
+    margin-top: 17px;
+    font-size: 36px;
+    left: 11%; } }
+
+@media (min-width: 767px) {
+  .logo1__container h1 {
+    font-size: 62px;
+    margin-top: -15px;
+    left: 24%; } }
+
+@media (min-width: 1023px) {
+  .logo1__container h1 {
+    font-size: 70px;
+    left: 30%; } }
+
+.campos {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  padding-bottom: 7px;
+  color: #8d8662fa;
+  margin-top: 8px; }
+
+.boton1 {
+  margin: 15px; }
+  .boton1:hover {
+    background-color: white;
+    color: black;
+    transition: 1s; }
+
+@media (max-width: 768px) {
+  .contacto__container {
+    padding: 0px 40px; } }
+
+.descripcion__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC);
+  padding-bottom: 5px; }
+
+.descripcion__cubo {
+  margin-bottom: 50px; }
+
+.descripcion__titulo {
+  font-family: "Rajdhani", sans-serif;
+  padding-top: 25px; }
+
+.descripcion {
+  font-family: "Poppins", sans-serif;
+  padding: 13px; }
+
+/*creo la clase para ejecutar la la animacion*/
+.animacion {
+  opacity: 0;
+  animation: animacion__descripcion 5s;
+  -webkit-animation: animacion__descripcion 5s;
+  animation-fill-mode: forwards; }
+
+@keyframes animacion__descripcion {
+  /*que empiece con*/
+  from {
+    opacity: 0;
+    top: -150px; }
+  /*y termine*/
+  to {
+    opacity: 1;
+    top: 0; } }
+
+/*para que sea real en todo los navegadores*/
+@-webkit-keyframes animacion__descripcion {
+  from {
+    opacity: 0;
+    top: -150px; }
+  to {
+    opacity: 1;
+    top: 0; } }
+
+.logo2__container {
+  height: 57vh;
+  /*que tome el alto de la pantalla no importa que tipo sea*/
+  background-attachment: fixed;
+  background-position: center;
+  /*la imagen se quede centrada*/
+  background-size: cover;
+  /*tome valor original de la imagen*/
+  background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg"); }
+  .logo2__container h1 {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    font-family: "Cormorant Garamond", serif;
+    color: #f00;
+    font-size: 8vw; }
+
+.equipo__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC); }
+
+.orientacion {
+  position: static !important; }
+
+.texto {
+  background-color: aliceblue; }
+  .texto h4 {
+    font-family: "Rajdhani", sans-serif;
+    color: black; }
+  .texto a {
+    text-decoration: none; }
+
+@media (min-width: 319px) {
+  .logo2__container h1 {
+    font-size: 36px;
+    left: 28%; } }
+
+@media (min-width: 767px) {
+  .logo2__container h1 {
+    font-size: 62px;
+    left: 34%; } }
+
+@media (min-width: 1023px) {
+  .logo2__container h1 {
+    font-size: 70px;
+    left: 40%; } }
+
+.servicio__container {
+  background-image: linear-gradient(#A5CDA8, #B5E2B9, #C7F9CC); }
+
+.box {
+  box-shadow: 3px 5px #72757652; }
