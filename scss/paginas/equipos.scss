@@ -1,8 +1,9 @@
 .logo2__container{
     height: 57vh; /*que tome el alto de la pantalla no importa que tipo sea*/
+    width: auto;
     background-attachment: fixed;
-    background-position: center; /*la imagen se quede centrada*/
-    background-size: cover; /*tome valor original de la imagen*/
+    background-position: center; 
+    background-size: cover; 
     background-image: url("../imagenes/diversas-esferas-uso-ilustracion-vector-composicion-realista-impresion-3d_1284-30443.jpg");
     @mixin tipo_h1($posicionX,$posicionY,$tipo-familia,$color,$tamano-letra){
         left: $posicionX;

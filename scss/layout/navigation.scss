@@ -1,5 +1,5 @@
 .navegador_modificado{
-    background-color: rgba($color: white, $alpha: 0.7);
+    background-image: linear-gradient(#a5cda86b, #b5e2b9c2, #c7f9cc40);
 }
 .imagen_logo{
     -webkit-box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.36); 
@@ -8,16 +8,18 @@
         transform: translate(12px,4px);
     }
 }
-.transparante{
-    background-color: transparent !important;
-    }
 .texto_navegador{
     color: rgb(0, 0, 0);
     font-family: $footer_titulo;
     font-size: 18px;
     &:hover{
-        color: #ddee47e7;
+        color: #b6c910;
         text-decoration: underline;
         transform: translate(3px,3px);
     }
+}
+@media (max-width:767px){
+    .navegador_modificado{
+        background-image: linear-gradient($colorPrincipal);
+    }  
 }
